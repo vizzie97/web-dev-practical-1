@@ -1,0 +1,204 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #202938;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+}
+
+.logo {
+    color: #2874a6;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #34445c;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #2874a6;
+}
+
+/* Home Section */
+.hero {
+    padding: 100px 8%;
+    text-align: center;
+    background: #e8f1fb;
+}
+
+.intro {
+    color: #2874a6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    margin: 12px 0;
+    font-size: 42px;
+}
+
+.hero h3 {
+    margin-bottom: 15px;
+    color: #52647c;
+}
+.button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background: #2874a6;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover {
+    background: #1c557d;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 22px;
+    color: #2874a6;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    padding: 12px 22px;
+    background: #ffffff;
+    border: 1px solid #dce4ee;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1 1 250px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+    color: #2874a6;
+}
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.email {
+    margin-top: 15px;
+}
+
+.email a {
+    color: #2874a6;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    color: #657187;
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .section {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+}
